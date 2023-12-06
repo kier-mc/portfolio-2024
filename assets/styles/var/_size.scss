@@ -4,6 +4,14 @@ $breakpoint-md: 600px;
 $breakpoint-lg: 900px;
 $breakpoint-xl: 1200px;
 
+// Layout
+$xs: 0.25rem;
+$sm: 0.5rem;
+$md: 1rem;
+$lg: 1.5rem;
+$xl: 2rem;
+$xxl: 3rem;
+
 // Text
 $text-sm: 0.833rem;
 $text-md: 1rem;
@@ -13,3 +21,6 @@ $text-h4: 1.728rem;
 $text-h3: 2.074rem;
 $text-h2: 2.488rem;
 $text-h1: 2.986rem;
+
+// Unique/specific
+$logo: 6rem;
