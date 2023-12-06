@@ -3,13 +3,17 @@
 
 @import url("normalize.css");
 
+:root {
+  scroll-behavior: smooth;
+}
+
 *,
 :root {
   box-sizing: border-box;
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100svh;
   background-color: colour.$dark;
   font-family: "Overpass", sans-serif;
   line-height: 1.618;
