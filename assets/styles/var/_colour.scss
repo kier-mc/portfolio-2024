@@ -9,3 +9,6 @@ $dark-accent:   #1b2330;
 // Text
 $text-light: $light;
 $text-dark: $dark;
+
+// Unique/specific
+$header-fade: linear-gradient($dark 12.5%, hsl(0, 0%, 0%, 0));
