@@ -12,6 +12,8 @@
 </template>
 
 <style scoped lang="scss">
+@use "../assets/styles/var/colour";
+@use "../assets/styles/var/easing";
 @use "../assets/styles/var/size";
 .header {
   display: flex;
@@ -33,6 +35,26 @@
 .link > a {
   all: unset;
   cursor: pointer;
+  position: relative;
+  padding: size.$sm size.$md;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%) scale(0, 0);
+    transform-origin: center;
+    height: size.$xxs;
+    border-radius: size.$xxs;
+    background-color: colour.$primary;
+    transition: transform 350ms easing.$out-quart;
+  }
+  &:hover {
+    &::before {
+      transform: translateY(100%) scale(1, 1);
+    }
+  }
 }
 </style>
 
