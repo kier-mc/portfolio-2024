@@ -61,9 +61,9 @@
 <script setup lang="ts">
 const data = {
   links: [
-    { label: "Home", to: "anchor-home" },
-    { label: "Projects", to: "anchor-skills" },
-    { label: "Contact", to: "anchor-contact" },
+    { label: "Home", to: "home" },
+    { label: "Projects", to: "projects" },
+    { label: "Contact", to: "contact" },
   ],
 };
 </script>

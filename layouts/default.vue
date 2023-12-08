@@ -1,5 +1,5 @@
 <template>
-  <div class="layout" id="anchor-home">
+  <div class="layout" id="home">
     <Transition name="header">
       <AppHeader
         v-if="headerIsFixed"
