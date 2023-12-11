@@ -24,7 +24,7 @@
   position: relative;
   display: grid;
   grid-template-rows: $header-size 1fr auto;
-  height: 100svh;
+  min-height: 100svh;
   max-width: size.$breakpoint-xl;
   margin-inline: auto;
   &__header {
