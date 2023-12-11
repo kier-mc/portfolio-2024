@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  color: colour.$text-dark;
+  background-color: colour.$primary;
+}
+
 body {
   min-height: 100svh;
   background-color: colour.$dark;
