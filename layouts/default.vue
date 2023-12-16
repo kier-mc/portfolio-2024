@@ -43,7 +43,7 @@
         position: absolute;
         inset: 0;
         z-index: -5;
-        //background-image: colour.$header-fade;
+        @include colour.fade(colour.$dark, 180deg, 12.5%);
       }
     }
   }

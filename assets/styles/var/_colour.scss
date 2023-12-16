@@ -11,4 +11,9 @@ $text-light: $light;
 $text-dark: $dark;
 
 // Unique/specific
-$header-fade: linear-gradient($dark 12.5%, hsl(0, 0%, 0%, 0));
+@mixin fade($colour: $dark, $angle: 180deg, $offset: 12.5%) {
+  #{$colour}: $colour;
+  #{$angle}: $angle;
+  #{$offset}: $offset;
+  background-image: linear-gradient($angle, $colour $offset, hsl(0, 0%, 0%, 0));
+}
