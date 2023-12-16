@@ -43,13 +43,16 @@
         position: absolute;
         inset: 0;
         z-index: -5;
-        background-image: colour.$header-fade;
+        //background-image: colour.$header-fade;
       }
     }
   }
   &__content {
     grid-row: 2;
-    padding: size.$md;
+    display: grid;
+    grid-auto-rows: max-content;
+    row-gap: size.$md;
+    padding-inline: size.$md;
   }
   &__footer {
     grid-row: 3;
