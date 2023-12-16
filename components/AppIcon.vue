@@ -9,9 +9,23 @@ enum Icons {
   html = "HTML",
   css = "CSS",
   ts = "TS",
+  js = "JS",
+  nodejs = "NodeJS",
+  vue = "Vue",
+  nuxt = "Nuxt",
+  pinia = "Pinia",
+  vitest = "Vitest",
+  jest = "Jest",
+  sass = "Sass",
+  bootstrap = "Bootstrap",
+  tailwind = "Tailwind",
+  postgresql = "PostgreSQL",
+  git = "Git",
+  github = "GitHub",
+  vscode = "VSCode",
 }
 
-type ValidIcon = keyof typeof Icons;
+export type ValidIcon = keyof typeof Icons;
 
 const props = defineProps({
   icon: { type: String as PropType<ValidIcon>, required: true },
