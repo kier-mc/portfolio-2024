@@ -21,6 +21,7 @@ $size-general: (
   "lg":   $baseline-general * $ratio-general,
   "xl":   $baseline-general * math.pow($ratio-general, 2),
   "2xl":  $baseline-general * math.pow($ratio-general, 3),
+  "3xl":  $baseline-general * math.pow($ratio-general, 4),
 );
 
 $size-specific: (
