@@ -1,5 +1,6 @@
 <template>
   <svg viewBox="0 0 128 128">
+    <title>Bootstrap logo</title>
     <defs>
       <linearGradient
         id="bootstrap-original-a"
@@ -35,21 +36,12 @@
         filterUnits="userSpaceOnUse"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-        <feColorMatrix
-          in="SourceAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        ></feColorMatrix>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
         <feOffset dy="4"></feOffset>
         <feGaussianBlur stdDeviation="8"></feGaussianBlur>
-        <feColorMatrix
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
-        ></feColorMatrix>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
         <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
-        <feBlend
-          in="SourceGraphic"
-          in2="effect1_dropShadow"
-          result="shape"
-        ></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
       </filter>
     </defs>
     <path
