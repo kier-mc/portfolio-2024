@@ -1,34 +1,76 @@
-// Major breakpoints
-$breakpoint-sm: 300px;
-$breakpoint-md: 600px;
-$breakpoint-lg: 900px;
-$breakpoint-xl: 1200px;
+@use "sass:map";
+@use "sass:math";
 
-// Layout
-$xxs: 0.125rem;
-$xs: 0.25rem;
-$sm: 0.5rem;
-$md: 1rem;
-$lg: 1.5rem;
-$xl: 2rem;
-$xxl: 3rem;
+$baseline-general:  1rem;
+$baseline-text:     1rem;
+$ratio-general:     1.333;
+$ratio-text:        1.333;
 
-// Text
-$text-sm: 0.833rem;
-$text-md: 1rem;
-$text-h6: 1.2rem;
-$text-h5: 1.44rem;
-$text-h4: 1.728rem;
-$text-h3: 2.074rem;
-$text-h2: 2.488rem;
-$text-h1: 2.986rem;
+$size-breakpoint: (
+  "sm": 300px,
+  "md": 600px,
+  "lg": 900px,
+  "xl": 1200px,
+);
 
-// Unique/specific
-$header-logo: 6rem;
-$header-padding: $md;
+$size-general: (
+  "2xs":  math.div($baseline-general, math.pow($ratio-general, 3)),
+  "xs":   math.div($baseline-general, math.pow($ratio-general, 2)),
+  "sm":   math.div($baseline-general, $ratio-general),
+  "md":   $baseline-general,
+  "lg":   $baseline-general * $ratio-general,
+  "xl":   $baseline-general * math.pow($ratio-general, 2),
+  "2xl":  $baseline-general * math.pow($ratio-general, 3),
+);
 
-// Icons
-$icon-sm: 2rem;
-$icon-md: 3rem;
-$icon-lg: 4rem;
-$icon-xl: 5rem;
+$size-specific: (
+  "logo": 6rem,
+);
+
+$size-text: (
+  "2xs":  math.div($baseline-text, math.pow($ratio-text, 3)),
+  "xs":   math.div($baseline-text, math.pow($ratio-text, 2)),
+  "sm":   math.div($baseline-text, $ratio-text),
+  "md":   $baseline-text,
+  "lg":   $baseline-text * $ratio-text,
+  "xl":   $baseline-text * math.pow($ratio-text, 2),
+  "2xl":  $baseline-text * math.pow($ratio-text, 3),
+);
+
+$size-icon: (
+  "xs": 1rem,
+  "sm": 2rem,
+  "md": 3rem,
+  "lg": 4rem,
+  "xl": 5rem,
+);
+
+$size-border: (
+  "sm": 0.0625rem,
+  "md": 0.125rem,
+  "lg": 0.1875rem,
+);
+
+@function breakpoint($key) {
+  @return map.get($size-breakpoint, $key);
+}
+
+@function general($key) {
+  @return map.get($size-general, $key);
+}
+
+@function specific($key) {
+  @return map.get($size-specific, $key);
+}
+
+@function text($key) {
+  @return map.get($size-text, $key);
+}
+
+@function icon($key) {
+  @return map.get($size-icon, $key);
+}
+
+@function border($key) {
+  @return map.get($size-border, $key);
+}

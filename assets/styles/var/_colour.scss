@@ -1,19 +1,14 @@
-// Main palette
-$light:         #ffffff;
-$light-accent:  #f5f5f5;
-$primary:       #60e1dc;
-$secondary:     #eb4b98;
-$dark:          #181e2a;
-$dark-accent:   #1b2330;
+@use "sass:map";
 
-// Text
-$text-light: $light;
-$text-dark: $dark;
+$palette-base: (
+  "light":          hsl(0, 0%, 100%),
+  "light-accent":   hsl(0, 0%, 96%),
+  "dark":           hsl(220, 27%, 13%),
+  "dark-accent":    hsl(215, 27%, 16%),
+  "primary":        hsl(178, 68%, 63%),
+  "secondary":      hsl(331, 80%, 61%),
+);
 
-// Unique/specific
-@mixin fade($colour: $dark, $angle: 180deg, $offset: 12.5%) {
-  #{$colour}: $colour;
-  #{$angle}: $angle;
-  #{$offset}: $offset;
-  background-image: linear-gradient($angle, $colour $offset, hsl(0, 0%, 0%, 0));
+@function base($key) {
+  @return map.get($palette-base, $key);
 }
