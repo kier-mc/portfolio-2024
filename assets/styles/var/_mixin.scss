@@ -1,0 +1,11 @@
+@mixin fade($colour: $dark, $angle: 180deg, $offset: 12.5%) {
+  #{$colour}: $colour;
+  #{$angle}: $angle;
+  #{$offset}: $offset;
+  background-image: linear-gradient($angle, $colour $offset, hsl(0, 0%, 0%, 0));
+}
+
+@mixin radial-glow($colour: hsl(0, 100%, 100%, 0.2)) {
+  #{$colour}: $colour;
+  background-image: radial-gradient(circle at right, $colour 0%, hsl(0, 100%, 100%, 0) 80%);
+}
