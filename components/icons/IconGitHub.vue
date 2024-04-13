@@ -1,5 +1,6 @@
 <template>
   <svg viewBox="0 0 128 128">
+    <title>GitHub logo</title>
     <g fill="#181616">
       <path
         fill-rule="evenodd"
