@@ -36,6 +36,7 @@ $size-text: (
   "lg":   $baseline-text * $ratio-text,
   "xl":   $baseline-text * math.pow($ratio-text, 2),
   "2xl":  $baseline-text * math.pow($ratio-text, 3),
+  "3xl":  $baseline-text * math.pow($ratio-text, 4),
 );
 
 $size-icon: (
