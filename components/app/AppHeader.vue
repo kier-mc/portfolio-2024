@@ -19,15 +19,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(size.$xs);
+  backdrop-filter: blur(var(--sz-xs));
 }
 .logo {
-  max-width: size.$header-logo;
+  max-width: var(--sz-logo);
 }
 .links {
   all: unset;
   display: inline-flex;
-  gap: size.$md;
+  gap: var(--sz-md);
 }
 .link {
   all: unset;
@@ -36,7 +36,7 @@
   all: unset;
   cursor: pointer;
   position: relative;
-  padding: size.$sm size.$md;
+  padding: var(--sz-sm) var(--sz-md);
   &::before {
     content: "";
     position: absolute;
@@ -45,10 +45,10 @@
     left: 0;
     transform: translateY(100%) scale(0, 0);
     transform-origin: center;
-    height: size.$xxs;
-    border-radius: size.$xxs;
-    background-color: colour.$primary;
-    transition: transform 350ms easing.$out-quart;
+    height: var(--sz-border-lg);
+    border-radius: var(--sz-xs);
+    background-color: var(--cl-primary);
+    transition: transform 350ms var(--ef-out-quart);
   }
   &:hover {
     &::before {
