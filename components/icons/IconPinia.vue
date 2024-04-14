@@ -1,47 +1,22 @@
 <template>
-  <svg
-    viewBox="0 0 319 477"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
+  <svg viewBox="0 0 319 477" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Pinia logo</title>
     <linearGradient id="a">
       <stop offset="0" stop-color="#52ce63" />
       <stop offset="1" stop-color="#51a256" />
     </linearGradient>
-    <linearGradient
-      id="b"
-      x1="55.342075%"
-      x2="42.816933%"
-      xlink:href="#a"
-      y1="0%"
-      y2="42.862855%"
-    />
-    <linearGradient
-      id="c"
-      x1="55.348642%"
-      x2="42.808103%"
-      xlink:href="#a"
-      y1="0%"
-      y2="42.862855%"
-    />
+    <linearGradient id="b" x1="55.342075%" x2="42.816933%" xlink:href="#a" y1="0%" y2="42.862855%" />
+    <linearGradient id="c" x1="55.348642%" x2="42.808103%" xlink:href="#a" y1="0%" y2="42.862855%" />
     <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="58.811243%">
       <stop offset="0" stop-color="#8ae99c" />
       <stop offset="1" stop-color="#52ce63" />
     </linearGradient>
-    <linearGradient
-      id="e"
-      x1="51.37763%"
-      x2="44.584719%"
-      y1="17.472551%"
-      y2="100%"
-    >
+    <linearGradient id="e" x1="51.37763%" x2="44.584719%" y1="17.472551%" y2="100%">
       <stop offset="0" stop-color="#ffe56c" />
       <stop offset="1" stop-color="#ffc63a" />
     </linearGradient>
     <g fill="none" fill-rule="evenodd" transform="translate(-34 -24)">
-      <g
-        transform="matrix(.99254615 .12186934 -.12186934 .99254615 33.922073 .976691)"
-      >
+      <g transform="matrix(.99254615 .12186934 -.12186934 .99254615 33.922073 .976691)">
         <path
           d="m103.950535 258.274149c44.361599-4.360825 60.014503-40.391282 65.353094-94.699444s-30.93219-103.451001-46.020347-101.9678079c-15.088156 1.4831932-63.0385313 58.9051239-68.3771222 113.2132869-5.3385908 54.308162 4.6827754 87.814791 49.0443752 83.453965z"
           fill="url(#b)"
@@ -70,9 +45,7 @@
         ry="10"
         transform="matrix(.99254615 .12186934 -.12186934 .99254615 40.859033 -10.039292)"
       />
-      <g
-        transform="matrix(-.99939083 .0348995 .0348995 .99939083 269.284825 271.027667)"
-      >
+      <g transform="matrix(-.99939083 .0348995 .0348995 .99939083 269.284825 271.027667)">
         <path
           d="m73.1046985 58.2728794c6.7372416 4.9130333 14.3132632 6.6640587 22.7280649 5.2530761 8.4148016-1.4109825 14.5054466-5.2535769 18.2719346-11.527783"
           stroke="#000"
@@ -106,9 +79,7 @@
             stroke="#fff"
             stroke-width="3"
           />
-          <path
-            d="m24 31c0-3.865549 3.134451-7 7-7s7 3.134451 7 7-3.134451 7-7 7-7-3.134451-7-7z"
-          />
+          <path d="m24 31c0-3.865549 3.134451-7 7-7s7 3.134451 7 7-3.134451 7-7 7-7-3.134451-7-7z" />
         </g>
       </g>
       <g stroke-linecap="round" stroke-width="11">
