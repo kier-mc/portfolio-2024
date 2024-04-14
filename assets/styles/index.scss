@@ -7,48 +7,51 @@
 @import url("normalize.css");
 
 :root {
-  --sz-xxs:           #{size.general("2xs")};
-  --sz-xs:            #{size.general("xs")};
-  --sz-sm:            #{size.general("sm")};
-  --sz-md:            #{size.general("md")};
-  --sz-lg:            #{size.general("lg")};
-  --sz-xl:            #{size.general("xl")};
-  --sz-2xl:           #{size.general("2xl")};
-  --sz-3xl:           #{size.general("3xl")};
+  --sz-xxs:             #{size.general("2xs")};
+  --sz-xs:              #{size.general("xs")};
+  --sz-sm:              #{size.general("sm")};
+  --sz-md:              #{size.general("md")};
+  --sz-lg:              #{size.general("lg")};
+  --sz-xl:              #{size.general("xl")};
+  --sz-2xl:             #{size.general("2xl")};
+  --sz-3xl:             #{size.general("3xl")};
 
-  --sz-logo:          #{size.specific("logo")};
+  --sz-logo:            #{size.specific("logo")};
 
-  --sz-screen-sm:     #{size.breakpoint("sm")};
-  --sz-screen-md:     #{size.breakpoint("md")};
-  --sz-screen-lg:     #{size.breakpoint("lg")};
-  --sz-screen-xl:     #{size.breakpoint("xl")};
+  --sz-screen-sm:       #{size.breakpoint("sm")};
+  --sz-screen-md:       #{size.breakpoint("md")};
+  --sz-screen-lg:       #{size.breakpoint("lg")};
+  --sz-screen-xl:       #{size.breakpoint("xl")};
 
-  --sz-text-xxs:      #{size.text("2xs")};
-  --sz-text-xs:       #{size.text("xs")};
-  --sz-text-sm:       #{size.text("sm")};
-  --sz-text-md:       #{size.text("md")};
-  --sz-text-lg:       #{size.text("lg")};
-  --sz-text-xl:       #{size.text("xl")};
-  --sz-text-xxl:      #{size.text("2xl")};
+  --sz-text-xxs:        #{size.text("2xs")};
+  --sz-text-xs:         #{size.text("xs")};
+  --sz-text-sm:         #{size.text("sm")};
+  --sz-text-md:         #{size.text("md")};
+  --sz-text-lg:         #{size.text("lg")};
+  --sz-text-xl:         #{size.text("xl")};
+  --sz-text-xxl:        #{size.text("2xl")};
 
-  --sz-icon-xs:       #{size.icon("xs")};
-  --sz-icon-sm:       #{size.icon("sm")};
-  --sz-icon-md:       #{size.icon("md")};
-  --sz-icon-lg:       #{size.icon("lg")};
-  --sz-icon-xl:       #{size.icon("xl")};
+  --sz-icon-xs:         #{size.icon("xs")};
+  --sz-icon-sm:         #{size.icon("sm")};
+  --sz-icon-md:         #{size.icon("md")};
+  --sz-icon-lg:         #{size.icon("lg")};
+  --sz-icon-xl:         #{size.icon("xl")};
 
-  --sz-border-sm:     #{size.border("sm")};
-  --sz-border-md:     #{size.border("md")};
-  --sz-border-lg:     #{size.border("lg")};
+  --sz-border-sm:       #{size.border("sm")};
+  --sz-border-md:       #{size.border("md")};
+  --sz-border-lg:       #{size.border("lg")};
 
-  --cl-light:         #{colour.base("light")};
-  --cl-light-accent:  #{colour.base("light-accent")};
-  --cl-dark:          #{colour.base("dark")};
-  --cl-dark-accent:   #{colour.base("dark-accent")};
-  --cl-primary:       #{colour.base("primary")};
-  --cl-secondary:     #{colour.base("secondary")};
+  --cl-light:           #{colour.base("light")};
+  --cl-dark:            #{colour.base("dark")};  
+  --cl-primary:         #{colour.base("primary")};
+  --cl-secondary:       #{colour.base("secondary")};
 
-  --ef-out-quart:     #{easing.out("quart")};
+  --cl-light-accent:    #{colour.accent("light")};
+  --cl-light-accent-2:  #{colour.accent("light-2")};
+  --cl-dark-accent:     #{colour.accent("dark")};
+  --cl-dark-accent-2:   #{colour.accent("dark-2")};
+
+  --ef-out-quart:       #{easing.out("quart")};
 }
 
 :root {
