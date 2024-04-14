@@ -7,7 +7,7 @@
 @import url("normalize.css");
 
 :root {
-  --sz-xxs:             #{size.general("2xs")};
+  --sz-2xs:             #{size.general("2xs")};
   --sz-xs:              #{size.general("xs")};
   --sz-sm:              #{size.general("sm")};
   --sz-md:              #{size.general("md")};
@@ -23,13 +23,13 @@
   --sz-screen-lg:       #{size.breakpoint("lg")};
   --sz-screen-xl:       #{size.breakpoint("xl")};
 
-  --sz-text-xxs:        #{size.text("2xs")};
+  --sz-text-2xs:        #{size.text("2xs")};
   --sz-text-xs:         #{size.text("xs")};
   --sz-text-sm:         #{size.text("sm")};
   --sz-text-md:         #{size.text("md")};
   --sz-text-lg:         #{size.text("lg")};
   --sz-text-xl:         #{size.text("xl")};
-  --sz-text-xxl:        #{size.text("2xl")};
+  --sz-text-2xl:        #{size.text("2xl")};
 
   --sz-icon-xs:         #{size.icon("xs")};
   --sz-icon-sm:         #{size.icon("sm")};
@@ -88,7 +88,7 @@ h6 {
 }
 
 h1 {
-  font-size: var(--sz-text-xxl);
+  font-size: var(--sz-text-2xl);
 }
 
 h2 {
