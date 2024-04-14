@@ -9,6 +9,17 @@ $palette-base: (
   "secondary":      hsl(331, 80%, 61%),   // #eb4b98
 );
 
+$palette-accent: (
+  "light":   hsl(0, 0%, 96%),      // #f5f5f5
+  "light-2": hsl(0, 0%, 92%),      // #ebebeb
+  "dark":    hsl(215, 27%, 16%),   // #1e2734
+  "dark-2":  hsl(215, 27%, 21%),   // #273344
+);
+
 @function base($key) {
   @return map.get($palette-base, $key);
+}
+
+@function accent($key) {
+  @return map.get($palette-accent, $key);
 }
