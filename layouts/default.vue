@@ -1,7 +1,7 @@
 <template>
   <div class="layout" id="home">
     <Transition name="header">
-      <AppHeader v-if="headerIsFixed" class="layout__header layout__header--fixed" />
+      <AppHeader v-if="shouldFixHeader" class="layout__header layout__header--fixed" />
       <AppHeader v-else class="layout__header" />
     </Transition>
     <main class="layout__content">
@@ -75,7 +75,13 @@
 <script setup lang="ts">
 const { y: windowY } = useWindowScroll();
 
-const headerIsFixed = computed(() => {
-  return windowY.value >= 128;
+const shouldFixHeader = ref<boolean>(false);
+
+watch(windowY, () => {
+  windowY.value >= 128 ? (shouldFixHeader.value = true) : (shouldFixHeader.value = false);
+});
+
+onMounted(() => {
+  if (windowY.value >= 128) shouldFixHeader.value = true;
 });
 </script>
