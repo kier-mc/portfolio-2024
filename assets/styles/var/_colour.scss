@@ -1,12 +1,12 @@
 @use "sass:map";
 
 $palette-base: (
-  "light":          hsl(0, 0%, 100%),
-  "light-accent":   hsl(0, 0%, 96%),
-  "dark":           hsl(220, 27%, 13%),
-  "dark-accent":    hsl(215, 27%, 16%),
-  "primary":        hsl(178, 68%, 63%),
-  "secondary":      hsl(331, 80%, 61%),
+  "light":          hsl(0, 0%, 100%),     // #ffffff
+  "light-accent":   hsl(0, 0%, 96%),      // #f5f5f5
+  "dark":           hsl(220, 27%, 13%),   // #181e2a
+  "dark-accent":    hsl(215, 27%, 16%),   // #1e2734
+  "primary":        hsl(178, 68%, 63%),   // #60e1dc
+  "secondary":      hsl(331, 80%, 61%),   // #eb4b98
 );
 
 @function base($key) {
