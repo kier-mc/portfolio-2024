@@ -1,12 +1,8 @@
 <template>
   <div class="layout" id="home">
     <Transition name="header">
-      <AppHeader
-        v-if="headerIsFixed"
-        ref="header"
-        class="layout__header layout__header--fixed"
-      />
-      <AppHeader v-else ref="header" class="layout__header" />
+      <AppHeader v-if="headerIsFixed" class="layout__header layout__header--fixed" />
+      <AppHeader v-else class="layout__header" />
     </Transition>
     <main class="layout__content">
       <slot />
@@ -16,51 +12,59 @@
 </template>
 
 <style scoped lang="scss">
-@use "../assets/styles/var/colour";
-@use "../assets/styles/var/easing";
+@use "../assets/styles/var/mixin";
 @use "../assets/styles/var/size";
+
 .layout {
-  $header-size: size.$header-logo + (size.$header-padding * 2); // logo + 2x padding
+  $header-padding: size.general("md");
+  $header-size: size.specific("logo") + ($header-padding * 2);
+
   position: relative;
   display: grid;
   grid-template-rows: $header-size 1fr auto;
   min-height: 100svh;
-  max-width: size.$breakpoint-xl;
+  max-width: var(--sz-screen-xl);
   margin-inline: auto;
+
   &__header {
     grid-row: 1;
-    padding: size.$md;
+    padding: $header-padding;
+
     &--fixed {
       position: fixed;
       top: 0;
       right: 0;
       left: 0;
-      max-width: size.$breakpoint-xl;
+      max-width: var(--sz-screen-xl);
       z-index: 10;
       margin-inline: auto;
+
       &::before {
         content: "";
         position: absolute;
         inset: 0;
         z-index: -5;
-        @include colour.fade(colour.$dark, 180deg, 12.5%);
+        @include mixin.fade(var(--cl-dark), 180deg, 12.5%);
       }
     }
   }
+
   &__content {
     grid-row: 2;
     display: grid;
     grid-auto-rows: max-content;
-    row-gap: size.$md;
-    padding-inline: size.$md;
+    row-gap: var(--sz-3xl);
+    padding: var(--sz-md);
   }
+
   &__footer {
     grid-row: 3;
   }
 }
+
 .header-enter-active,
 .header-leave-active {
-  transition: opacity 500ms easing.$out-quart;
+  transition: opacity 500ms var(--ef-out-quart);
 }
 .header-enter-from,
 .header-leave-to {
@@ -69,10 +73,9 @@
 </style>
 
 <script setup lang="ts">
-const windowY = useWindowScroll().y;
-const header: Ref<HTMLElement | null> = ref(null);
+const { y: windowY } = useWindowScroll();
 
 const headerIsFixed = computed(() => {
-  return windowY.value > 128;
+  return windowY.value >= 128;
 });
 </script>
