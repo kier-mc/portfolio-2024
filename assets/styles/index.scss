@@ -99,6 +99,10 @@ h3 {
   font-size: var(--sz-text-lg);
 }
 
+[id] {
+  scroll-margin-top: 128px;
+}
+
 *,
 :root {
   box-sizing: border-box;
