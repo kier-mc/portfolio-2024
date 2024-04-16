@@ -74,11 +74,21 @@
 </style>
 
 <script setup lang="ts">
-const data = {
+type Link = {
+  key: number;
+  label: string;
+  to: string;
+};
+
+type Data = {
+  links: Link[];
+};
+
+const data: Data = {
   links: [
-    { label: "Home", to: "home" },
-    { label: "Projects", to: "projects" },
-    { label: "Contact", to: "contact" },
+    { key: 1, label: "Home", to: "home" },
+    { key: 2, label: "Projects", to: "projects" },
+    { key: 3, label: "Contact", to: "contact" },
   ],
 };
 </script>
