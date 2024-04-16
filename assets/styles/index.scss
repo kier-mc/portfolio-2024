@@ -101,7 +101,10 @@ h3 {
 }
 
 [id] {
-  scroll-margin-top: 128px;
+  $header-size: size.specific("logo") + (size.general("md") * 2);
+  $offset: $header-size + size.general("md");
+
+  scroll-margin-top: $offset;
 }
 
 *,
