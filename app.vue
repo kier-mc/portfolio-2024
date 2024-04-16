@@ -6,4 +6,6 @@
 
 <style scoped lang="scss"></style>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useSeoMeta(seoMetadata);
+</script>
