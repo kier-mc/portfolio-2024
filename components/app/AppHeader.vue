@@ -1,14 +1,16 @@
 <template>
-  <header class="header">
-    <AppLogo class="logo" background-opacity="0.85" />
-    <nav class="nav">
-      <ul class="links">
-        <li v-for="(link, key) in data.links" :key="key">
-          <a class="link" :href="`#${link.to}`">{{ link.label }}</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div>
+    <header class="header">
+      <AppLogo class="logo" background-opacity="0.85" />
+      <nav class="nav">
+        <ul class="links">
+          <li v-for="(link, key) in data.links" :key="key">
+            <a class="link" :href="`#${link.to}`">{{ link.label }}</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 </template>
 
 <style scoped lang="scss">
@@ -18,7 +20,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(var(--sz-xs));
+  max-width: var(--sz-screen-xl);
+  margin-inline: auto;
 }
 
 .logo {
@@ -28,7 +31,7 @@
 .links {
   all: unset;
   display: inline-flex;
-  gap: var(--sz-md);
+  column-gap: var(--sz-md);
   & li {
     all: unset;
   }
