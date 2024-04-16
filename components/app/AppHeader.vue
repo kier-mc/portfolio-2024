@@ -12,10 +12,8 @@
 </template>
 
 <style scoped lang="scss">
-@use "../assets/styles/var/colour";
-@use "../assets/styles/var/easing";
 @use "../assets/styles/var/mixin";
-@use "../assets/styles/var/size";
+
 .header {
   display: flex;
   justify-content: space-between;
