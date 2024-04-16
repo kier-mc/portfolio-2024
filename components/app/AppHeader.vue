@@ -87,8 +87,8 @@ type Data = {
 const data: Data = {
   links: [
     { key: 1, label: "Home", to: "home" },
-    { key: 2, label: "Projects", to: "projects" },
-    { key: 3, label: "Contact", to: "contact" },
+    { key: 2, label: "Skills", to: "skills" },
+    { key: 3, label: "Work", to: "work" },
   ],
 };
 const { links } = data;
