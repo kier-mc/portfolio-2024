@@ -23,21 +23,19 @@
   display: grid;
   grid-template-rows: $header-size 1fr auto;
   min-height: 100svh;
-  max-width: var(--sz-screen-xl);
   margin-inline: auto;
 
   &__header {
     grid-row: 1;
     padding: $header-padding;
+    backdrop-filter: blur(var(--sz-xs));
 
     &--fixed {
       position: fixed;
       top: 0;
-      right: 0;
-      left: 0;
-      max-width: var(--sz-screen-xl);
+      inset-inline: 0;
       z-index: 10;
-      margin-inline: auto;
+      border-bottom: var(--sz-border-sm) solid var(--cl-dark-accent-2);
 
       &::before {
         content: "";
@@ -54,7 +52,9 @@
     display: grid;
     grid-auto-rows: max-content;
     row-gap: var(--sz-3xl);
+    max-width: var(--sz-screen-xl);
     padding: var(--sz-md);
+    margin-inline: auto;
   }
 
   &__footer {
