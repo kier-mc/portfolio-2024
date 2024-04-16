@@ -3,8 +3,8 @@
     <AppLogo class="logo" background-opacity="0.85" />
     <nav class="nav">
       <ul class="links">
-        <li v-for="(link, key) in data.links" :key="key" class="link">
-          <a :href="`#${link.to}`">{{ link.label }}</a>
+        <li v-for="(link, key) in data.links" :key="key">
+          <a class="link" :href="`#${link.to}`">{{ link.label }}</a>
         </li>
       </ul>
     </nav>
@@ -28,11 +28,11 @@
   all: unset;
   display: inline-flex;
   gap: var(--sz-md);
+  & li {
+    all: unset;
+  }
 }
 .link {
-  all: unset;
-}
-.link > a {
   all: unset;
   cursor: pointer;
   position: relative;
