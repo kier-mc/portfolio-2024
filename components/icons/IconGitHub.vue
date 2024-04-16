@@ -1,7 +1,7 @@
 <template>
   <svg viewBox="0 0 128 128">
     <title>GitHub logo</title>
-    <g fill="#181616">
+    <g fill="var(--cl-light)">
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
