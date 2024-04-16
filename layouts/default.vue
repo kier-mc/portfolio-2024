@@ -42,7 +42,7 @@
         position: absolute;
         inset: 0;
         z-index: -5;
-        @include mixin.fade(var(--cl-dark), 180deg, 12.5%);
+        @include mixin.gradient-fade(var(--cl-dark), 180deg, 12.5%);
       }
     }
   }
