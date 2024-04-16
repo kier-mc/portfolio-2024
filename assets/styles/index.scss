@@ -1,8 +1,7 @@
 @use "./var/colour";
 @use "./var/easing";
+@use "./var/mixin";
 @use "./var/size";
-
-@use "sass:color";
 
 @import url("normalize.css");
 
