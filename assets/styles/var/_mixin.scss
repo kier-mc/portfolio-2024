@@ -1,6 +1,15 @@
 @use "./colour";
 @use "sass:color";
 
+@mixin background-glow($colour: colour.base("primary"),$alpha-offset: -0.925, $size: 100%, $position-1: top, $position-2: center) {
+  #{$colour}:       $colour;
+  #{$alpha-offset}: $alpha-offset;
+  #{$size}:         $size;
+  #{$position-1}:   $position-1;
+  #{$position-2}:   $position-2;
+  background-image: radial-gradient(at $position-1 $position-2, #{color.adjust($colour, $alpha: $alpha-offset)} 0rem, transparent $size);
+}
+
 @mixin gradient-fade($colour: #{colour.base("dark")}, $angle: 180deg, $offset: 12.5%) {
   #{$colour}: $colour;
   #{$angle}: $angle;
