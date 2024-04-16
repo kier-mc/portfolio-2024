@@ -1,4 +1,8 @@
-<template></template>
+<template>
+  <ContentIntro />
+  <ContentSkills />
+  <ContentProjects />
+</template>
 
 <style scoped lang="scss"></style>
 
