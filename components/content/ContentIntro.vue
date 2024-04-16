@@ -18,7 +18,6 @@
 <style scoped lang="scss">
 .introduction {
   display: grid;
-  grid-auto-rows: fit-content;
   row-gap: var(--sz-2xs);
   &__content {
     display: grid;
