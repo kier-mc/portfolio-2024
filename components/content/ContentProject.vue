@@ -159,9 +159,11 @@ const { title, description, link, sourceLink, imageUrl, altText, tags } = props;
 const wrapperElement = ref<HTMLDivElement | null>(null);
 
 const { isOutside } = useMouseInElement(wrapperElement);
+const { focused } = useFocusWithin(wrapperElement);
 
 const setLinkBarClass = computed(() => {
   const mouseIsOutside = isOutside.value;
-  return mouseIsOutside ? "project__links" : "project__links project__links--visible";
+  const subElementFocused = !focused.value;
+  return mouseIsOutside && subElementFocused ? "project__links" : "project__links project__links--visible";
 });
 </script>
