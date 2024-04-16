@@ -5,11 +5,12 @@ export default defineNuxtConfig({
       link: [
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css?family=Overpass|Bebas+Neue&display=swap",
+          href: "https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap",
         },
       ],
     },
   },
+  components: ["~/components/", "~/components/app", "~/components/content", "~/components/widgets"],
   css: ["~/assets/styles/index.scss"],
   devtools: { enabled: false },
   modules: ["@vueuse/nuxt"],
