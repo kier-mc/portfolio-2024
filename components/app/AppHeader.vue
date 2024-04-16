@@ -14,6 +14,7 @@
 <style scoped lang="scss">
 @use "../assets/styles/var/colour";
 @use "../assets/styles/var/easing";
+@use "../assets/styles/var/mixin";
 @use "../assets/styles/var/size";
 .header {
   display: flex;
@@ -50,10 +51,16 @@
     background-color: var(--cl-primary);
     transition: transform 350ms var(--ef-out-quart);
   }
+  &::after {
+    @include mixin.link-focus;
+  }
   &:hover {
     &::before {
       transform: translateY(100%) scale(1, 1);
     }
+  }
+  &:focus-visible::after {
+    opacity: 1;
   }
 }
 </style>
