@@ -4,6 +4,11 @@ export default defineNuxtConfig({
     head: {
       link: [
         {
+          rel: "icon",
+          type: "image/svg+xml",
+          href: "./assets/meta/favicon.svg",
+        },
+        {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap",
         },
