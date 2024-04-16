@@ -1,4 +1,5 @@
 @use "./colour";
+@use "./size";
 @use "sass:color";
 
 @mixin font-stack {
@@ -26,12 +27,14 @@
   background-image: radial-gradient(circle at right, $colour 0%, hsl(0, 100%, 100%, 0) 80%);
 }
 
-@mixin link-focus {
+@mixin link-focus($border-weight: size.border("sm"), $border-radius: size.general("2xs")) {
+  #{border-weight}: $border-weight;
+  #{border-radius}: $border-radius;
   content: "";
   position: absolute;
   inset: 0;
-  border: var(--sz-border-sm) solid var(--cl-primary);
-  border-radius: var(--sz-2xs);
+  border: $border-weight solid var(--cl-primary);
+  border-radius: $border-radius;
   opacity: 0;
   transition: opacity 500ms var(--ef-out-quart);
 }
