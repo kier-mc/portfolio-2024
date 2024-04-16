@@ -4,8 +4,8 @@
       <AppLogo class="logo" background-opacity="0.85" />
       <nav class="nav">
         <ul class="links">
-          <li v-for="(link, key) in links" :key="key">
-            <a class="link" :href="`#${link.to}`">{{ link.label }}</a>
+          <li v-for="{ key, label, to } in links" :key="key">
+            <a class="link" :href="`#${to}`">{{ label }}</a>
           </li>
         </ul>
       </nav>
