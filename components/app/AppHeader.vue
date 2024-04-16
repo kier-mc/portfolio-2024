@@ -42,6 +42,7 @@
   cursor: pointer;
   position: relative;
   padding: var(--sz-sm) var(--sz-md);
+
   &::before {
     content: "";
     position: absolute;
@@ -55,14 +56,17 @@
     background-color: var(--cl-primary);
     transition: transform 350ms var(--ef-out-quart);
   }
+
   &::after {
     @include mixin.link-focus;
   }
+
   &:hover {
     &::before {
       transform: translateY(100%) scale(1, 1);
     }
   }
+
   &:focus-visible::after {
     opacity: 1;
   }
