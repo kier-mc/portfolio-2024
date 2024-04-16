@@ -38,3 +38,7 @@
   opacity: 0;
   transition: opacity 500ms var(--ef-out-quart);
 }
+
+@mixin carousel-mask {
+  mask-image: linear-gradient(90deg, transparent 0%, hsl(0, 0%, 0%), 12.5%, hsl(0, 0%, 0%) 87.5%, transparent 100%);
+}
