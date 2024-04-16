@@ -20,9 +20,11 @@
   align-items: center;
   backdrop-filter: blur(var(--sz-xs));
 }
+
 .logo {
   max-width: var(--sz-logo);
 }
+
 .links {
   all: unset;
   display: inline-flex;
@@ -31,6 +33,7 @@
     all: unset;
   }
 }
+
 .link {
   all: unset;
   cursor: pointer;
