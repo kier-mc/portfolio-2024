@@ -9,3 +9,13 @@
   #{$colour}: $colour;
   background-image: radial-gradient(circle at right, $colour 0%, hsl(0, 100%, 100%, 0) 80%);
 }
+
+@mixin link-focus {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: var(--sz-border-sm) solid var(--cl-primary);
+  border-radius: var(--sz-2xs);
+  opacity: 0;
+  transition: opacity 500ms var(--ef-out-quart);
+}
