@@ -2,7 +2,7 @@
   <article class="project">
     <h3>{{ title }}</h3>
     <div ref="wrapperElement" class="project__wrapper">
-      <img class="project__image" :alt="altText" :src="imageUrl" width="900" height="675" loading="lazy" />
+      <img class="project__image" :alt="altText" :src="imageUrl" width="640" height="360" loading="lazy" />
       <div v-if="link || sourceLink" :class="setLinkBarClass">
         <a v-if="link" class="project__link" :href="link" target="_blank" tabindex="0">View Site</a>
         <a v-if="sourceLink" class="project__link" :href="sourceLink" target="_blank" tabindex="0">
