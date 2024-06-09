@@ -55,10 +55,22 @@ type Data = {
 const data: Data = {
   projects: [
     {
+      title: "Adapt Physiotherapy",
+      description: "A virtual-first inclusive physiotherapy clinic.",
+      imageUrl: "assets/img/projects/adapt-physio-crop.webp",
+      tags: ["Closed Source 🔒", "Commercial 📊", "In Development 🔧"],
+    },
+    {
+      title: "EBM Webstore",
+      description: "A custom ecommerce store built with Stripe for a Manchester-based artist.",
+      imageUrl: "assets/img/projects/ebm-crop.webp",
+      tags: ["Closed Source 🔒", "Commercial 📊", "In Development 🔧"],
+    },
+    {
       title: "Task Hub",
       description: "A full-stack application intended to act as a personal landing page.",
       sourceLink: "https://github.com/kier-mc/task-hub",
-      imageUrl: "assets/img/projects/taskhub.webp",
+      imageUrl: "assets/img/projects/taskhub-crop.webp",
       tags: ["Open Source 🔓", "Personal 🧑", "In Development 🔧"],
     },
     {
@@ -66,20 +78,14 @@ const data: Data = {
       description: "A WCAG AA compliant tool built to solve the online game 'Wordle'.",
       link: "https://wordle-tool.vercel.app",
       sourceLink: "https://github.com/kier-mc/wordle-tool",
-      imageUrl: "assets/img/projects/wordle-tool.webp",
+      imageUrl: "assets/img/projects/wordle-tool-crop.webp",
       tags: ["Open Source 🔓", "Personal 🧑", "In Production 🚀"],
-    },
-    {
-      title: "EBM Webstore",
-      description: "A custom ecommerce store built with Stripe for a Manchester-based artist.",
-      imageUrl: "assets/img/projects/ebm.webp",
-      tags: ["Closed Source 🔒", "Commercial 📊", "In Development 🔧"],
     },
     {
       title: "2024 Personal Portfolio",
       description: "Built to serve as a showcase for 2024.",
       sourceLink: "https://github.com/kier-mc/portfolio-2024",
-      imageUrl: "assets/img/projects/portfolio.webp",
+      imageUrl: "assets/img/projects/portfolio-crop.webp",
       tags: ["Open Source 🔓", "Personal 🧑", "In Production 🚀"],
     },
   ],
