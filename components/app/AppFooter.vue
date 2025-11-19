@@ -17,8 +17,8 @@
 </template>
 
 <style scoped lang="scss">
-@use "../assets/styles/var/mixin";
-@use "../assets/styles/var/size";
+@use "../../assets/styles/var/mixin";
+@use "../../assets/styles/var/size";
 
 .footer {
   display: flex;

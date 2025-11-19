@@ -12,8 +12,8 @@
 </template>
 
 <style scoped lang="scss">
-@use "../assets/styles/var/mixin";
-@use "../assets/styles/var/size";
+@use "../../assets/styles/var/_mixin.scss";
+@use "../../assets/styles/var/size";
 
 @keyframes scroll {
   100% {

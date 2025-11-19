@@ -18,8 +18,8 @@
 </template>
 
 <style scoped lang="scss">
-@use "../assets/styles/var/colour";
-@use "../assets/styles/var/mixin";
+@use "../../assets/styles/var/colour";
+@use "../../assets/styles/var/mixin";
 @use "sass:color";
 .project {
   display: grid;

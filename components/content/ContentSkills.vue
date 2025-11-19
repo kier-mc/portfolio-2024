@@ -15,8 +15,9 @@
 </template>
 
 <style scoped lang="scss">
-@use "../assets/styles/var/mixin";
-@use "../assets/styles/var/size";
+@use "../../assets/styles/var/mixin";
+@use "../../assets/styles/var/size";
+
 .skills {
   display: grid;
   row-gap: var(--sz-2xs);
